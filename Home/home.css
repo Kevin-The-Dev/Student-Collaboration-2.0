@@ -1,0 +1,193 @@
+/* Reset styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar styles */
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown menu for "Message" */
+.message-menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #007bff;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.message-menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+  padding: 10px 20px;
+}
+
+.dropdown li a {
+  color: #fff;
+}
+
+.dropdown li a:hover {
+  background-color: #0056b3;
+}
+
+/* Background Photo styles */
+.background-photo-container {
+  background-image: url('CKPCET photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background-photo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay to improve readability */
+  filter: blur(5px);  /* Apply blur to the background */
+  z-index: 1;
+}
+
+/* Content on top of the background */
+.welcome-message {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Make sure it's above the background */
+  padding: 253px;
+  /* background-color: rgba(0, 0, 0, 0.6); Semi-transparent overlay for better readability */
+  border-radius: 8px;
+  filter: none; /* Disable blur on welcome message */
+}
+
+/* Animations */
+.welcome-message h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1.5s ease-out forwards; /* Fade in effect for h1 */
+}
+
+.welcome-message p {
+  font-size: 18px;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1.5s ease-out forwards 1.5s; /* Fade in for p after 1.5s delay */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Slight move from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #007bff;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-divider {
+  height: 140px;
+  width: 1px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+
+.footer-left {
+  flex: 2;
+  padding: 20px;
+  text-align: justify;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-line {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-line p {
+  margin: 0;
+}

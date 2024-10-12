@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Main Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Personal Info Section */
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.profile-picture {
+    flex: 0 0 150px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.details {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.info-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.info-column p {
+    margin-bottom: 0.5rem;
+}
+
+/* Attendance Table Styling */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.attendance-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Skills Section Styling */
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+/* Achievements Section */
+.achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

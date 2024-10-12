@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Material</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+        </ul>
+        <h1 class="header-text">Study Material</h1>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for study material...">
+    </div>
+
+    <!-- Download All Button -->
+    <button class="download-all-btn">Download All Materials</button>
+
+    <!-- Folder and File View -->
+    <div class="material-container" id="root">
+      <div class="folder-box" onclick="toggleFolder(this)">📁 OOP
+        <ul class="nested">
+          <li class="file"><a href="OOP/Unit-1_Introduction to java and elementary programming.pdf" target="_blank">📄 OOP Unit 1: Introduction to Java</a></li>
+          <li class="file"><a href="OOP/Unit-2_Selections , Mathematical functions and loops.pdf" target="_blank">📄 OOP Unit 2: Selections and Loops</a></li>
+        </ul>
+      </div>
+
+      <div class="folder-box" onclick="toggleFolder(this)">📁 PEM
+        <ul class="nested">
+          <li class="file"><a href="PEM/Unit-1_Introduction to Economics.pdf" target="_blank">📄 PEM Unit 1: Introduction to Economics</a></li>
+          <li class="file"><a href="PEM/Unit-2_Theory of Production and Cost.pdf" target="_blank">📄 PEM Unit 2: Theory of Production</a></li>
+        </ul>
+      </div>
+
+      <div class="folder-box" onclick="toggleFolder(this)">📁 OS
+        <ul class="nested">
+          <li class="file"><a href="OS/Unit-1_Introduction to Operating System.pdf" target="_blank">📄 OS Unit 1: Operating Systems</a></li>
+          <li class="file"><a href="OS/Unit-2_Process and Thread Management.pdf" target="_blank">📄 OS Unit 2: Threads and Processes</a></li>
+        </ul>
+      </div>
+
+      <div class="folder-box" onclick="toggleFolder(this)">📁 Previous Exam Papers
+        <ul class="nested">
+          <li class="file"><a href="Exam/OOP/OOP P1.pdf" target="_blank">📄 OOP Exam 2019</a></li>
+          <li class="file"><a href="Exam/OOP/OOP P2.pdf" target="_blank">📄 OOP Exam 2020</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
